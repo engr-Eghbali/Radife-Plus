@@ -1,0 +1,113 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+   <link href="./css/finalpage.css" rel="stylesheet">
+   <script>var exports = {};</script>
+   <script src="./js/finalpage.js"></script>
+
+<style>
+    .slideout-menu { left: auto; }
+    .btn-hamburger { left: auto; right: 12px;}
+    .box { height: 1500px; }
+  </style>
+  <title>ردیفه!</title>
+</head>
+
+<body>
+
+  <div id="splash">
+    <img id="radife" src="./css/img/splash.png">
+  </div>
+
+  
+  <header class="panel-header" id="head">
+      <button class="btn-hamburger js-slideout-toggle"></button>
+      <button type="button" id="back" onclick="backAndClear()"></button>
+    </header> 
+     
+
+ 
+    <div id="map"></div>
+  <main id="panel" class="panel">
+   
+    
+    <section class="box">
+      <div class="box-content">
+      
+      </div>
+
+      
+      <div id="address"><input id="preaddress" type="checkbox" value="1" checked></div>
+      <div id="newaddress" > میتوانید مکان دیگری را روی نقشه انتخاب کنید</p1></div>
+      
+    </section>
+
+    
+  </main>
+  
+    <div  id="clearMsg">
+
+     <div id="box">
+      <p1>آیا مایل به خالی کردن سبد خرید خود هستید؟</p1>
+      <br>
+      <button id="No" ><p1>خیر، ادامه میدهم</p1></button>
+      <br>
+      <button id="Yes" ><p1>بله، بازگشت به فروشگاه</p1></button>
+    </div>
+    </div>
+ 
+
+  <div id="pay" onclick="goTocart()" ><p2>ادامه</p2></div>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-74bxG6QQ9r83svnnZumBCg4FfE78Ujc&language=fa" >
+  </script>
+  <script>
+      window.onscroll = function() {myFunction()};
+      
+      var header = document.getElementById("head");
+      var sticky = header.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          header.classList.add("fixed");
+        } else {
+          header.classList.remove("fixed");
+        }
+      }
+      </script>
+  <script src="./js/slideout.js"></script>
+  <script>
+    window.onload = function() {
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'side': 'right'
+      });
+
+      document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+        slideout.toggle();
+      });
+
+      document.querySelector('.menu').addEventListener('click', function(eve) {
+        if (eve.target.nodeName === 'A') { }
+      });
+    };
+
+    
+  </script>
+</body>
+    </html>

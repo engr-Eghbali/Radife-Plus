@@ -1,0 +1,190 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="css/Site.css" rel="stylesheet" />
+    <link href="css/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.css" rel="stylesheet" />
+   <link href="./css/cart.css" rel="stylesheet">
+   <script>var exports = {};</script>
+   <script src="./js/cart.js"></script>
+
+<style>
+    .slideout-menu { left: auto; }
+    .btn-hamburger { left: auto; right: 12px;}
+    .box { height: -webkit-fill-available !important; }
+  </style>
+  <title>ردیفه!</title>
+</head>
+
+<body>
+
+  <div id="splash">
+    <img id="radife" src="./css/img/splash.png">
+  </div>
+
+
+  <nav id="menu" class="menu">
+    <a href="#" target="_blank">
+      <header class="menu-header">
+        <span class="menu-header-title">خانه</span>
+      </header>
+    </a>
+
+    <section class="menu-section">
+      <h3 class="menu-section-title"></h3>
+      <ul class="menu-section-list">
+              <ul class="nav sidebar-nav">
+              
+            
+                <li>
+                  <a href="#" onclick="goTo('./favorite.html')"><span id="spanicon" class="glyphicon glyphicon-heart-empty"></span>علاقه مندی ها</a>
+              </li>
+              <li>
+                  <a href="#" onclick="goTo('./schedule.html')"><span id="spanicon" class="glyphicon glyphicon-refresh"></span>برنامه خرید</a>
+              </li>
+              <li>
+                  <a href="#" onclick="goTo('./wallet.html')"><span id="spanicon" class="glyphicon glyphicon-briefcase"></span>کیف پول</a>
+              </li>
+              
+              <li>
+                  <a href="#" onclick="goTo('./profile.html')"><span id="spanicon" class="glyphicon glyphicon-user"></span>پروفایل کاربری</a>
+              </li>
+              <li>
+                  <a href="#" onclick="goTo('./share.html')"><span id="spanicon" class="glyphicon glyphicon-send"></span>معرفی به دوستان</a>
+              </li>
+              <li>
+                  <a href="#" onclick="goTo('./support.html')"><span id="spanicon" class="glyphicon glyphicon-earphone"></span>پشتیبانی</a>
+              </li>
+              <li>
+                  <a href="#" onclick="goTo('./main.html')"><span id="spanicon" class="glyphicon glyphicon-link"></span>درباره ما</a>
+              </li>
+              <li>
+                <a href="#" onclick="logout()"><span id="spanicon" class="glyphicon glyphicon-remove"></span>خروج از حساب کاربری</a>
+            </li>
+          </ul>
+      </ul>
+    </section>
+
+   
+  </nav>
+  
+
+  
+  <header class="panel-header" id="head">
+      <button class="btn-hamburger js-slideout-toggle"></button>
+      <p9>فاکتور</p9>
+      <button type="button" id="back" onclick="backAndClear()"></button>
+    </header> 
+     
+
+ 
+
+  <main id="panel" class="panel">
+   
+    <section class="box">
+      <div class="box-content">
+
+        <div class="factorrow" id="factorrow" style="border:none;"></div>
+        
+        <div class="factorrow" id="footerfactor" style="border:none;height:fit-content;margin-top:15%;"><button id="addoff" onclick="showOffPage()"><p4>کد تخفیف</p4></button><button id="resetCart" onclick="cancelCart()"><p4>حذف</p4></button><button id="addrepeat" onclick="addrepeat()"><p4>برنامه خرید</p4></button></div>
+       
+      </div>
+    </section>
+
+    
+  </main>
+  <div class="buy" id="continue" onclick="selectadd()"><br><p3 style="font-size: 1.6em;right: 20%;padding-top:0;position:  fixed;float:  right;width: 60%;">پرداخت و ارسال</p3></div>
+  <div id="repeatpage">
+    <input id="repeatname" placeholder="عنوان لیست خود را وارد کنید." autofocus>
+
+
+    
+    <div id="date">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInput3">تاریخ</label>
+        <div class="input-group">
+            <div class="input-group-addon" data-mddatetimepicker="true" data-trigger="click" data-targetselector="#exampleInput3">
+              <span class="glyphicons glyphicons-calendar">انتخاب تاریخ</span>
+            </div>
+            <input type="text" class="form-control" id="exampleInput3" placeholder="تاریخ" data-mddatetimepicker="true" data-placement="right" data-englishnumber="true" />
+        </div>
+      </div>
+      </div>
+  
+  
+      <div class="input-group input-group-lg" id="time" >
+        <input  id="timeinput" type="time" class="form-control" autocomplete="on" required>
+    </div>
+
+    <button id="setrepeat" onclick="savelist()">ذخیره</button>
+    <button id="cancelrepeat" onclick="cancelrepeat()">انصراف</button>
+  </div>
+
+
+  <div id="offpage">
+
+    <div class="container">
+      <input type="number" class="form-control" id="sc-box" placeholder="--- --- --" autocomplete="on" required>
+      </div>
+  <div>
+      <h1>لطفا کد تخفیف خود را وارد کنید</h1>
+      </div>
+  <div>
+      <a href="#">
+            <img src="css/img/addOff.svg" id="icon2">
+              </a>
+      <a href="#" onclick="hideOffPage()">
+          <img src="css/img/cancelOff.svg" id="icon1">
+      </a>
+    
+  </div>
+  </div>
+
+  <script>
+      window.onscroll = function() {myFunction()};
+      
+      var header = document.getElementById("head");
+      var sticky = header.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          header.classList.add("fixed");
+        } else {
+          header.classList.remove("fixed");
+        }
+      }
+      </script>
+  <script src="./js/slideout.js"></script>
+  <script>
+    window.onload = function() {
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'side': 'right'
+      });
+
+      document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+        slideout.toggle();
+      });
+
+      document.querySelector('.menu').addEventListener('click', function(eve) {
+        if (eve.target.nodeName === 'A') { }
+      });
+    };
+  </script>
+    <script src="js/MdBootstrapPersianDateTimePicker/calendar.min.js"></script>
+    <script src="js/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.js"></script>
+</body>
+    </html>

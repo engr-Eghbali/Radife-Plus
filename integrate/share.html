@@ -1,0 +1,169 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <script>
+        var exports = {};
+    </script>
+    <script src="./js/history.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <style>
+        .slideout-menu {
+            left: auto;
+        }
+        
+        .btn-hamburger {
+            left: auto;
+            right: 12px;
+        }
+        
+        .box {
+            height: -webkit-fill-available !important;
+        }
+    </style>
+    <title>ردیفه!</title>
+</head>
+
+<body>
+
+    <nav id="menu" class="menu">
+        <a href="#" target="_blank">
+            <header class="menu-header">
+                <span class="menu-header-title">خانه</span>
+            </header>
+        </a>
+
+        <section class="menu-section">
+            <h3 class="menu-section-title"></h3>
+            <ul class="menu-section-list">
+                <ul class="nav sidebar-nav">
+
+                    <li>
+                        <a href="#"  onclick="goTo('./history.html')"><span id="spanicon" class="glyphicon glyphicon-shopping-cart"></span>سفارش های من</a>
+                    </li>
+                    <li>
+                        <a href="#"  onclick="goTo('./favorite.html')"><span id="spanicon" class="glyphicon glyphicon-heart-empty"></span>علاقه مندی ها</a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="spanicon" class="glyphicon glyphicon-refresh"></span>لیست سفارش مجدد</a>
+                    </li>
+                    <li>
+                        <a href="#" nclick="goTo('./wallet.html')"><span id="spanicon" class="glyphicon glyphicon-briefcase"></span>کیف پول</a>
+                    </li>
+
+                    <li>
+                        <a href="#"  onclick="goTo('./profile.html')"><span id="spanicon" class="glyphicon glyphicon-user"></span>پروفایل کاربری</a>
+                    </li>
+                    <li>
+                        <a href="#"  onclick="goTo('./share.html')"><span id="spanicon" class="glyphicon glyphicon-send"></span>معرفی به دوستان</a>
+                    </li>
+                    <li>
+                        <a href="#"  onclick="goTo('./support.html')"><span id="spanicon" class="glyphicon glyphicon-earphone"></span>پشتیبانی</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="goTo('./aboutus.html')"><span id="spanicon" class="glyphicon glyphicon-link"></span>درباره ما</a>
+                    </li>
+                </ul>
+            </ul>
+        </section>
+
+
+    </nav>
+
+
+
+    <header class="panel-header" id="head">
+        <button class="btn-hamburger js-slideout-toggle"></button>
+        <button type="button" id="back" onclick="window.location.replace('./main.html')"></button>
+        <div>
+            <p id="p">معرفی به دوستان</p>
+        </div>
+    </header>
+
+
+
+
+    <main id="panel" class="panel">
+
+        <section class="box">
+
+            <div>
+                <img src="./css/img/Asset2.svg">
+                <h1>کد معرف</h1>
+
+                <h3 id="code">68841</h3>
+            </div>
+
+            <div>
+                <p id="parag">
+                    راه‌اندازی یک سایت همه آن کاری نیست که باید در زمینه رشد کسب‌وکارتان انجام دهید. در واقع خیلی اوقات حتی بعد از مشاوره‌های طولانی و زمان‌بر که منجر به صرف هزینه برای ایجاد یک سایت شیک می‌شود...
+                </p>
+            </div>
+
+
+            <div class="container">
+                <a href="#" class="btn btn-info btn-block" role="button" id="btn">ارسال لینک دعوت</a>
+            </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var header = document.getElementById("head");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("fixed");
+            } else {
+                header.classList.remove("fixed");
+            }
+        }
+    </script>
+    <script src="./js/slideout.js"></script>
+    <script>
+        window.onload = function() {
+            var slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'side': 'right'
+            });
+
+            document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+                slideout.toggle();
+            });
+
+            document.querySelector('.menu').addEventListener('click', function(eve) {
+                if (eve.target.nodeName === 'A') {}
+            });
+        };
+    </script>
+</body>
+
+</html>

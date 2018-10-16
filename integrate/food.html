@@ -1,0 +1,137 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+   <link href="./css/food.css" rel="stylesheet">
+   <script>var exports = {};</script>
+   <script src="./js/food.js"></script>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+<style>
+    .slideout-menu { left: auto; }
+    .btn-hamburger { left: auto; right: 12px;}
+    .box { height: 110vh !important; }
+  </style>
+  <title>ردیفه!</title>
+</head>
+
+<body>
+
+ 
+
+
+  <nav id="menu" class="menu">
+    <a href="#" target="_blank">
+      <header class="menu-header">
+        <span class="menu-header-title">خانه</span>
+      </header>
+    </a>
+
+    <section class="menu-section">
+      <h3 class="menu-section-title"></h3>
+      <ul class="menu-section-list">
+              <ul class="nav sidebar-nav">
+              
+                  <div>
+                      <label>
+                        <input style="outline:none;" type="radio" class="option-input radio" name="example" checked />
+                        محله ی ما
+                      </label>
+                      <label>
+                        <input style="outline:none;" type="radio" class="option-input radio" name="example" />
+                        کل شهر
+                      </label>
+                      <label>
+                        <input style="outline:none;" type="radio" class="option-input radio" name="example" />
+                        منطقه یک
+                      </label>
+                      <label>
+                          <input style="outline:none;" type="radio" class="option-input radio" name="example" />
+                          منطقه دو
+                            </label>
+                            <label>
+                                  <input style="outline:none;" type="radio" class="option-input radio" name="example" />
+                                  منطقه سه
+                                </label>
+                    </div>
+          </ul>
+      </ul>
+    </section>
+
+   
+  </nav>
+  
+
+  
+  <header class="panel-header" id="head">
+      <button class="btn-hamburger js-slideout-toggle"></button>
+      <p9></p9>
+      <button type="button" id="back" onclick="window.location.replace('./main.html')"></button>
+    </header> 
+     
+
+ 
+
+  <main id="panel" class="panel">
+      <div id="slideshow">
+          <div style="background-image:url('./css/img/1.jpg');background-size:100% 100%;" >
+          </div>
+  
+          <div style="background-image:url('./css/img/2.jpg');background-size:100% 100%;">
+          </div>
+  
+          <div style="background-image:url('./css/img/3.jpg');background-size:100% 100%;">    
+            </div>
+  
+       </div>
+        
+    <section class="box">
+
+       
+
+        <div id="searchrow">
+            <button id="magnifier" onclick=""></button>
+            <button id="hoods" onclick=""></button>
+        </div>
+
+      <div class="box-content">
+
+          <div id="markets"></div>
+    </section>
+
+    
+  </main>
+
+ 
+  <script src="./js/slideout.js"></script>
+  <script>
+    window.onload = function() {
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'side': 'right'
+      });
+
+      document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+        slideout.toggle();
+      });
+
+      document.querySelector('.menu').addEventListener('click', function(eve) {
+        if (eve.target.nodeName === 'A') { }
+      });
+    };
+  </script>
+</body>
+    </html>

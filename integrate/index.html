@@ -1,0 +1,67 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+   <link href="./css/first.css" rel="stylesheet">
+   <script>var exports = {};</script>
+   <script src="./js/first.js"></script>
+
+<style>
+    .box { height:  -webkit-fill-available !important; }
+  </style>
+  <title>ردیفه!</title>
+</head>
+
+<body>
+
+  <div id="splash">
+    <img id="radife" src="./css/img/splash.png">
+  </div>
+
+ 
+
+  <main id="panel" class="panel">
+   
+    <section class="box">
+      <div class="box-content">
+        <div id="ax"></div>
+        <input id="phoneno" type="number" placeholder="       شماره همراه خود را وارد کنید" autofocus>
+        <button id="sendphone" onclick="getphone()"><p1>ارسال کد تائید</p1></button>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <script src="./js/slideout.js"></script>
+  <script>
+    window.onload = function() {
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'side': 'right'
+      });
+
+      document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+        slideout.toggle();
+      });
+
+      document.querySelector('.menu').addEventListener('click', function(eve) {
+        if (eve.target.nodeName === 'A') { }
+      });
+    };
+  </script>
+</body>
+    </html>

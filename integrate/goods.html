@@ -1,0 +1,180 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+   <link href="./css/goods.css" rel="stylesheet">
+   <script>var exports = {};</script>
+   <script src="./js/goods.js"></script>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  
+
+<style>
+    .slideout-menu { left: auto; }
+    .btn-hamburger { left: auto; right: 12px;}
+    .box { height:  100vh !important; }
+  </style>
+  <title>ردیفه!</title>
+</head>
+
+<body>
+
+  <div id="splash">
+    <img id="radife" src="./css/img/splash.png">
+  </div>
+
+  <div id="commentsPage">
+
+
+    
+
+    <div class="comment-box">
+      <button id="closeComment" onclick="closeComments()"></button>
+      <div class="commentlogs">
+                  
+              <div class="comment friend">
+                  <div class="comment-massage">
+                  <p7 id="personIcon"><i class="fas fa-user-circle"></i></p7>
+                  <p1 class="user-name">اصغر فرهادی</p1>
+                  <div class="userstar"><p9 style="color:goldenrod;"><i class="fas fa-star"></i></p9><p9 style="color:goldenrod;"><i class="fas fa-star"></i></p9><p9 style="color:goldenrod;"><i class="fas fa-star"></i></p9><p9 style="color:goldenrod;"><i class="fas fa-star"></i></p9><p9><i class="far fa-star"></i></p9></div>
+                  <br>
+                  <p2 class="othersComment">
+                      سیلبیلاببی
+                      یبیبلبلبیلبل<br>
+                      وای که چقد خوبس!</p2>
+                  </div>
+              </div>
+
+                  <div class="comment self">
+                  <p class="comment-massage">نرم افزاردون خیلی دوست بداریس! لاو ایت</p>
+                  </div>
+          </div>
+  
+      </div>
+        
+
+ 
+
+  <div class="sendform">
+      <div id="star"><p8 onclick="rate(1)" style="color:goldenrod;"><i class="fas fa-star"></i></p8><p8 onclick="rate(2)"><i class="far fa-star"></i></p8><p8 onclick="rate(3)"><i class="far fa-star"></i></p8><p8 onclick="rate(4)"><i class="far fa-star"></i></p8><p8 onclick="rate(5)"><i class="far fa-star"></i></p8></div>
+      <div class="comment-form"> 
+          <textarea style="outline: none;"></textarea>
+          <button id="sendBtn" onclick="sendBtn"><i class="fa fa-paper-plane" id="icon"></i></button>
+      </div>
+  </div>
+
+  
+    
+
+
+
+
+  </div>
+
+  
+  <nav id="menu" class="menu">
+    <a href="#" target="_blank">
+      <header class="menu-header">
+        <span class="menu-header-title">خانه</span>
+      </header>
+    </a>
+
+    <section class="menu-section">
+      <h3 class="menu-section-title"></h3>
+      <ul class="menu-section-list">
+              <ul class="nav sidebar-nav">
+              <li style="padding-bottom:10%;font-size:1.3em;font-family:'boldfont';padding-right:4%;"><p6>نوع</p6><p6>تعداد</p6><p6>قیمت</p6></li>
+                  <div id="list"></div>
+                  <div class="total" id="total"><p6>مبلغ خرید:</p6><p7 id="mablagh"></p7></div>
+          </ul>
+      </ul>
+    </section>
+
+   
+  </nav>
+  
+
+  
+  <header class="panel-header" id="head">
+      <button class="btn-hamburger js-slideout-toggle"></button>
+      <button type="button" id="back" onclick="window.location.replace('./food.html')"></button>
+    </header> 
+     
+
+ 
+
+  <main id="panel" class="panel">
+      <div id="slideshow">
+          <div style="background-image:url('./css/img/1.jpg');background-size:100% 100%;" >
+          </div>
+  
+          <div style="background-image:url('./css/img/2.jpg');background-size:100% 100%;">
+          </div>
+  
+          <div style="background-image:url('./css/img/3.jpg');background-size:100% 100%;">    
+            </div>
+  
+       </div>
+        
+    <section class="box">
+
+       
+
+        <div class="statrow" id="statusrow">
+      <a href="#" id="comments" onclick="showComments()" ><i class="far fa-comment" style="padding-left:2px;"></i>نظرات</a>
+
+        </div>
+
+      <div class="box-content">
+      
+        <div id="catrowPlace" >
+       
+        
+      </div>
+
+      <div id="goods"></div>
+     
+      
+    </section>
+
+  </main>
+
+  <div class="buy" onclick="gotomap()" id="buy">
+  </br>
+    <p1 id="buycount" style="padding-left:5px;"></p1>
+    <p2>تکمیل خرید</p2>
+  </div>
+  <div id="footer" style="width:100%;height:10vh;"></div>
+  
+
+  <script src="./js/slideout.js"></script>
+  <script>
+    window.onload = function() {
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'side': 'right'
+      });
+
+      document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+        slideout.toggle();
+      });
+
+      document.querySelector('.menu').addEventListener('click', function(eve) {
+        if (eve.target.nodeName === 'A') { }
+      });
+    };
+  </script>
+</body>
+    </html>

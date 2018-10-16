@@ -1,0 +1,179 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+   <link href="./css/main.css" rel="stylesheet">
+   <script>var exports = {};</script>
+   <script src="./js/main.js"></script>
+
+<style>
+    .slideout-menu { left: auto; }
+    .btn-hamburger { left: auto; right: 12px;}
+    .box { height: -webkit-fill-available !important; }
+  </style>
+  <title>ردیفه!</title>
+</head>
+
+<body>
+
+ 
+  <div id="splash">
+    <img id="radife" src="./css/img/splash.png">
+  </div>
+  
+  <nav id="menu" class="menu">
+    <a href="#" target="_blank">
+      <header class="menu-header">
+        <span class="menu-header-title">خانه</span>
+      </header>
+    </a>
+
+    <section class="menu-section">
+      <h3 class="menu-section-title"></h3>
+      <ul class="menu-section-list">
+              <ul class="nav sidebar-nav">
+              
+             
+              <li>
+                  <a href="#" onclick="goTo('./favorite.html')"><span id="spanicon" class="glyphicon glyphicon-heart-empty"></span>علاقه مندی ها</a>
+              </li>
+              <li>
+                  <a href="#" onclick="goTo('./schedule.html')"><span id="spanicon" class="glyphicon glyphicon-refresh"></span>برنامه خرید</a>
+              </li>
+              <li>
+                  <a href="#" onclick="goTo('./wallet.html')"><span id="spanicon" class="glyphicon glyphicon-briefcase"></span>کیف پول</a>
+              </li>
+              
+              <li>
+                  <a href="#" onclick="goTo('./profile.html')"><span id="spanicon" class="glyphicon glyphicon-user"></span>پروفایل کاربری</a>
+              </li>
+              <li>
+                  <a href="#" onclick="goTo('./share.html')"><span id="spanicon" class="glyphicon glyphicon-send"></span>معرفی به دوستان</a>
+              </li>
+              <li>
+                  <a href="#" onclick="goTo('./support.html')"><span id="spanicon" class="glyphicon glyphicon-earphone"></span>پشتیبانی</a>
+              </li>
+              <li>
+                  <a href="#" onclick="goTo('./main.html')"><span id="spanicon" class="glyphicon glyphicon-link"></span>درباره ما</a>
+              </li>
+              <li>
+                <a href="#" onclick="logout()"><span id="spanicon" class="glyphicon glyphicon-remove"></span>خروج از حساب کاربری</a>
+            </li>
+          </ul>
+      </ul>
+    </section>
+
+   
+  </nav>
+  
+
+  
+  <header class="panel-header" id="head">
+      <button class="btn-hamburger js-slideout-toggle"></button>
+      <p9>منوی اصلی</p9>
+      <button type="button" id="back" onclick="window.location.replace('./profile.html')"></button>
+    </header> 
+     
+
+ 
+
+  <main id="panel" class="panel">
+   
+    <section class="box">
+      <div class="box-content">
+
+          <div id="icons">
+
+              <div id="row1">
+      
+                      <div id="market">
+                              <div class="market-a"></div>
+                              <div class="market-b"></div>
+                            </div>
+      
+                            <div id="medical">
+                                  <div class="medical-a"></div>
+                                  <div class="medical-b"></div>
+                                </div>
+      
+              </div>
+              <div id="row2">
+      
+                      <div id="miveh">
+                              <div class="miveh-a"></div>
+                              <div class="miveh-b"></div>
+                            </div>
+      
+                            <div id="naan">
+                                  <div class="naan-a"></div>
+                                  <div class="naan-b"></div>
+                                </div>
+              </div>
+              <div id="row3">
+      
+                      <div id="food">
+                              <div class="food-a"></div>
+                              <div class="food-b"></div>
+                            </div>
+      
+                            <div id="cake">
+                                  <div class="cake-a"></div>
+                                  <div class="cake-b"></div>
+                                </div>
+              </div>
+      
+      
+          </div>
+
+      </div>
+    </section>
+
+    
+  </main>
+
+  <script>
+      window.onscroll = function() {myFunction()};
+      
+      var header = document.getElementById("head");
+      var sticky = header.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          header.classList.add("fixed");
+        } else {
+          header.classList.remove("fixed");
+        }
+      }
+      </script>
+  <script src="./js/slideout.js"></script>
+  <script>
+    window.onload = function() {
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'side': 'right'
+      });
+
+      document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+        slideout.toggle();
+      });
+
+      document.querySelector('.menu').addEventListener('click', function(eve) {
+        if (eve.target.nodeName === 'A') { }
+      });
+    };
+  </script>
+</body>
+    </html>
