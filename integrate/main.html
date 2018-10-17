@@ -20,7 +20,7 @@
 
 <style>
     .slideout-menu { left: auto; }
-    .btn-hamburger { left: auto; right: 12px;}
+    .btn-hamburger { left: 20px; right: auto;}
     .box { height: -webkit-fill-available !important; }
   </style>
   <title>ردیفه!</title>
@@ -36,7 +36,7 @@
   <nav id="menu" class="menu">
     <a href="#" target="_blank">
       <header class="menu-header">
-        <span class="menu-header-title">خانه</span>
+        <span class="menu-header-title">Home</span>
       </header>
     </a>
 
@@ -47,29 +47,29 @@
               
              
               <li>
-                  <a href="#" onclick="goTo('./favorite.html')"><span id="spanicon" class="glyphicon glyphicon-heart-empty"></span>علاقه مندی ها</a>
+                  <a href="#" onclick="goTo('./favorite.html')"><span id="spanicon" class="glyphicon glyphicon-heart-empty"></span>Favorits</a>
               </li>
               <li>
-                  <a href="#" onclick="goTo('./schedule.html')"><span id="spanicon" class="glyphicon glyphicon-refresh"></span>برنامه خرید</a>
+                  <a href="#" onclick="goTo('./schedule.html')"><span id="spanicon" class="glyphicon glyphicon-refresh"></span>Shopping Schedule </a>
               </li>
               <li>
-                  <a href="#" onclick="goTo('./wallet.html')"><span id="spanicon" class="glyphicon glyphicon-briefcase"></span>کیف پول</a>
+                  <a href="#" onclick="goTo('./wallet.html')"><span id="spanicon" class="glyphicon glyphicon-briefcase"></span>Wallet</a>
               </li>
               
               <li>
-                  <a href="#" onclick="goTo('./profile.html')"><span id="spanicon" class="glyphicon glyphicon-user"></span>پروفایل کاربری</a>
+                  <a href="#" onclick="goTo('./profile.html')"><span id="spanicon" class="glyphicon glyphicon-user"></span>User Profile</a>
               </li>
               <li>
-                  <a href="#" onclick="goTo('./share.html')"><span id="spanicon" class="glyphicon glyphicon-send"></span>معرفی به دوستان</a>
+                  <a href="#" onclick="goTo('./share.html')"><span id="spanicon" class="glyphicon glyphicon-send"></span>Invite Friends</a>
               </li>
               <li>
-                  <a href="#" onclick="goTo('./support.html')"><span id="spanicon" class="glyphicon glyphicon-earphone"></span>پشتیبانی</a>
+                  <a href="#" onclick="goTo('./support.html')"><span id="spanicon" class="glyphicon glyphicon-earphone"></span>Support</a>
               </li>
               <li>
-                  <a href="#" onclick="goTo('./main.html')"><span id="spanicon" class="glyphicon glyphicon-link"></span>درباره ما</a>
+                  <a href="#" onclick="goTo('./main.html')"><span id="spanicon" class="glyphicon glyphicon-link"></span>About Us</a>
               </li>
               <li>
-                <a href="#" onclick="logout()"><span id="spanicon" class="glyphicon glyphicon-remove"></span>خروج از حساب کاربری</a>
+                <a href="#" onclick="logout()"><span id="spanicon" class="glyphicon glyphicon-remove"></span>LogOut</a>
             </li>
           </ul>
       </ul>
@@ -82,8 +82,9 @@
   
   <header class="panel-header" id="head">
       <button class="btn-hamburger js-slideout-toggle"></button>
-      <p9>منوی اصلی</p9>
+      <p9>Main menu</p9>
       <button type="button" id="back" onclick="window.location.replace('./profile.html')"></button>
+      <button type="button" id="gems" onclick="gemPage('concept')"><div id="gemIcon"></div> <div id="gemCount">9</div></button>
     </header> 
      
 

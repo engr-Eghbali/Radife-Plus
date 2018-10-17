@@ -95,7 +95,7 @@ function Slideout(options) {
   this._duration = parseInt(options.duration, 10) || 300;
   this._tolerance = parseInt(options.tolerance, 10) || 70;
   this._padding = this._translateTo = parseInt(options.padding, 10) || 256;
-  this._orientation = this._side === 'right' ? -1 : 1;
+  this._orientation = this._side === 'left' ? -1 : 1;
   this._translateTo *= this._orientation;
 
   // Init touch events

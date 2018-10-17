@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.403 29.333">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fea832;
+      }
+
+      .cls-2 {
+        fill: #fe9923;
+      }
+
+      .cls-3 {
+        fill: #ffd400;
+      }
+
+      .cls-4 {
+        fill: #fdbf00;
+      }
+
+      .cls-5 {
+        fill: #fe8821;
+      }
+
+      .cls-6 {
+        fill: #e5741a;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-1840 -12.667)">
+    <path id="Path_123" data-name="Path 123" class="cls-1" d="M108.442,121H83.685a1.107,1.107,0,0,0-.589.183l.624,7.484,5.591,2.462,5.662-2.884,7.842,2.884,5.627-2.637.589-7.308A1.106,1.106,0,0,0,108.442,121Z" transform="translate(1763.134 -108.333)"/>
+    <path id="Path_124" data-name="Path 124" class="cls-2" d="M262.7,131.128l5.627-2.637.589-7.308a1.107,1.107,0,0,0-.589-.183H255.949v7.645Z" transform="translate(1603.249 -108.333)"/>
+    <path id="Path_126" data-name="Path 126" class="cls-3" d="M38.335,130.531l-5.755-9a1.115,1.115,0,0,0-.365-.346L26,131.128,19.248,121,12.5,131.128l-6.216-9.945a1.116,1.116,0,0,0-.365.346l-5.728,9a1.059,1.059,0,0,0-.137.6L5.6,134.5H31.392l7.061-3.376A1.122,1.122,0,0,0,38.335,130.531Z" transform="translate(1839.95 -108.333)"/>
+    <path id="Path_127" data-name="Path 127" class="cls-4" d="M268.093,134.5l7.061-3.376a1.12,1.12,0,0,0-.118-.6l-5.755-9a1.115,1.115,0,0,0-.365-.346l-6.216,9.945L255.949,121v13.5Z" transform="translate(1603.249 -108.333)"/>
+    <path id="Path_128" data-name="Path 128" class="cls-1" d="M162.976,256h-13.5l-1.336,7.6,8.088,11.61,7.561-10.062Z" transform="translate(1702.974 -233.206)"/>
+    <path id="Path_129" data-name="Path 129" class="cls-2" d="M262.7,256h-6.752v19.205l7.561-10.062Z" transform="translate(1603.249 -233.206)"/>
+    <path id="Path_130" data-name="Path 130" class="cls-5" d="M.057,256a1.193,1.193,0,0,0,.3.8l18.106,18.08a1.122,1.122,0,0,0,.8.33L12.5,256Z" transform="translate(1839.944 -233.206)"/>
+    <path id="Path_131" data-name="Path 131" class="cls-6" d="M262.7,256l-6.752,19.205a1.121,1.121,0,0,0,.8-.33l18.133-18.08a1.125,1.125,0,0,0,.277-.8Z" transform="translate(1603.249 -233.206)"/>
+  </g>
+</svg>

@@ -109,9 +109,9 @@ a {
  */
 .panel-header {
  width: 100%;
- height: 5em;
+ height: 6em;
  position: relative;
- background-color: #fff;
+ background-color: #F2F2F2;
   
 }
 #head{
@@ -136,10 +136,10 @@ a {
   border: none;
   position: absolute;
   top: 12px;
-  left: 12px;
+  left: 20px;
   outline:none;
-  background: url('assets/menu.png') no-repeat center;
-  width: 50px;
+  background: url('assets/humberger.svg') no-repeat center;
+  width: 34px;
   height: 50px;
 }
 
@@ -361,10 +361,9 @@ body {
   
   .slideout-menu {
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 0 !important;
+    top: 5em;
     bottom: 0;
-    right: 0;
     z-index: 0;
     width: 256px;
     overflow-y: scroll;
@@ -397,13 +396,13 @@ body {
 
 
   #back{
-    float: left;
-    left: 4%;
-    top:2em;
+    float: right;
+    right: 5%;
+    top:1.6em;
     width: 2em;
     height: 2em;
     background-color: transparent;
-    background-image: url('./img/back1.png');
+    background-image: url('./img/arrow-right.svg');
     background-repeat: no-repeat;
     background-size: contain;
     outline: none;
@@ -811,13 +810,14 @@ height: 100%;
 }
 
 p9{
-  color: black;
+  color: #4E4E4E;
   font-family: 'mediumfont';
-  font-size: 1em;
+  font-size: 1.4em;
+  font-weight: 800;
   text-align: left;
   float: left;
-  margin-left: 15%;
-  margin-top: 8%;
+  margin-left: 3.5em;
+  margin-top: 1.5em;
 }
 
 
@@ -844,11 +844,35 @@ p9{
   position: fixed;
 }
 
+#gems{
+  width: 5em;
+  margin-right: 5em;
+  height: 4em;
+  margin-top: 1em;
+  border-bottom: none;
+  border-top: none;
+  border-right: 1px solid #C8C5C5;
+  border-left: 1px solid #C8C5C5;
+  background-color: #F2F2F2;
+  outline: none;
+}
 
+#gemCount{
+  color: #E5741A;
+  font-size: 1.6em;
+  font-weight: 400;
+  margin-top: 0em;
+}
 
-
-
-
+#gemIcon{
+  background-color: transparent;
+  background-image: url(./img/dimond.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2em;
+  background-position: center;
+  
+}
 
 
 
