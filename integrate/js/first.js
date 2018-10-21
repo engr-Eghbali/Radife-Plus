@@ -12,7 +12,8 @@ $(document).ready(function(){
 
  //intial app key+version+hiidens here...remove this after done!
 if(key=="key=radife22&add=1"){
-    window.location.replace("./main.html");
+   // window.location.replace("./main.html");
+   console.log("first.js ln16 login check")
 }else{
     if(key=="key=radife22")
     window.location.replace("./third.html");

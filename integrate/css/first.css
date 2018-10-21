@@ -30,6 +30,7 @@ body {
 body,
 .panel {
   background-color: #fff;
+  margin-bottom: 0 !important;
 }
 
 .menu {
@@ -248,7 +249,7 @@ body {
     position: relative;
     z-index: 1;
     will-change: transform;
-    background-image: url("./img/background.svg");
+    background-image: url("./img/firstPageBG.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -286,46 +287,39 @@ body {
   padding-left: 1em;
 }
 
-#ax{
-
-  width: 100%;
-  height: 18em;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("./img/pizza.png");
-  margin-right: auto;
-  margin-left: auto;
-  background-position-x: center;
-  margin-top: 4%;
-}
 
 #phoneno{
 
   width: 90%;
-  height: 2.5em;
-  margin-right: 5%;
-  float: right;
-  margin-top: 25%;
+  height: 3em;
+  margin-left: 5%;
+  float: left;
+  margin-top: 64vh;
   border-radius: 20px;
   border: none;
   outline: none;
-  padding-right: 8%;
+  padding-left: 8%;
+  direction: ltr;
 
 }
 
 #sendphone{
-  width: 90%;
-  height: 2.5em;
-  margin-right: 5%;
-  float: right;
-  margin-top: 4%;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  background-color: #339900;
-  color: #000;
-  font-family: 'mediumfont';
-  border: 2px solid whitesmoke;
+
+    width: 10%;
+    margin-top: 64vh !important;
+    position: fixed;
+    height: 3em;
+    float: right;
+    border-bottom-right-radius: 20px;
+    border: none;
+    border-top-right-radius: 20px;
+    outline: none;
+    background-color: #66E700;
+    font-family: 'mediumfont';
+    background-image: url("./img/arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
 }
 
 #splash{
@@ -353,7 +347,41 @@ body {
 
 }
 
-
+#auth{
+  width: 70%;
+  direction: ltr;
+  float: left;
+  text-align: center;
+  margin-top: 8vh;
+}
+#auth>p{
+  color: #fff;
+}
+#fbAuth{
+  background-image: url("./img/fbIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: right;
+  width: 5vh;
+  height: 5vh;
+  margin-top: -5vh;
+  background-color: transparent;
+  border: none;
+}
+#ggAuth{
+  background-image: url("./img/ggIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: right;
+  width: 5vh;
+  height: 5vh;
+  margin-top: -5vh;
+  background-color: transparent;
+  border: none;
+  margin-right: 5vh;
+}
 
 
 /*███████╗███╗   ██╗ ██████╗ ██████╗    ███████╗ ██████╗ ██╗  ██╗██████╗  █████╗ ██╗     ██╗ ██████╗  ██████╗ ███╗   ███╗ █████╗ ██╗██╗     
