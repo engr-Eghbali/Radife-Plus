@@ -14,9 +14,9 @@
     <script src="./js/jquery-3.3.1.min.js"></script>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-   <link href="./css/emailPage.css" rel="stylesheet">
+   <link href="./css/phonePage.css" rel="stylesheet">
    <script>var exports = {};</script>
-   <script src="./js/emailPage.js"></script>
+   <script src="./js/phonePage.js"></script>
 
 <style>
     .box { height:  -webkit-fill-available !important; }
@@ -37,15 +37,12 @@
     <section class="box">
       <div class="box-content">
        
-        <input id="phoneno" type="email" placeholder="Email" autofocus>
+        <input id="phoneno" type="number" placeholder="enter phone number" autofocus>
         <button id="sendphone" onclick="getphone()"></button>
-        <div id="auth">
-          <p>signin with:</p>
-          <button id="fbAuth"></button>
-          <button id="ggAuth"></button>
-        </div>
+        <input id="recievedCode" type="number" placeholder="enter recieved code" autofocus>
+        <button id="sendCode" onclick="getphone()"></button>
         <div id="pageNo"></div>
-      </div>
+
     </section>
 
     
